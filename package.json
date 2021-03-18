@@ -1,0 +1,33 @@
+{
+  "name": "dummy-souseki",
+  "version": "0.0.1",
+  "description": "Displays the dummy text with Souseki Natsume 'kokoro'.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksmxxxxxx/dummy-souseki.git"
+  },
+  "keywords": [
+    "dummy",
+    "text",
+    "japanease"
+  ],
+  "author": "ksmxxxxxx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ksmxxxxxx/dummy-souseki/issues"
+  },
+  "homepage": "https://github.com/ksmxxxxxx/dummy-souseki#readme",
+  "devDependencies": {
+    "eslint": "^7.22.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-standard": "^5.0.0"
+  }
+}
