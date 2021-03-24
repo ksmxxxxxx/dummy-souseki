@@ -3,11 +3,12 @@
 import { Command } from 'commander'
 import DummySouseki from '../lib/dummySouseki.js'
 import CopyToClipboard from './copyToClipboard.js'
+import getVersion from './getVersion.js'
 
 const program = new Command()
 
 program
-  .version('0.0.1', '-v, --version', 'output the current version')
+  .version(getVersion(), '-v, --version', 'output the current version')
   .option('-p, --paragraphs <number>', 'Specifies the number of paragraph')
   .option('-c --copy', 'Copy to clipboard with dummy text')
   .parse()
