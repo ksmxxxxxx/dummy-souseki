@@ -8,9 +8,10 @@ import getVersion from './getVersion.js'
 const program = new Command()
 
 program
-  .version(getVersion(), '-v, --version', 'output the current version')
+  .name('dummy-souseki')
+  .version(getVersion(), '-v, --version', 'Output the current version')
   .option('-p, --paragraphs <number>', 'Specifies the number of paragraph')
-  .option('-c --copy', 'Copy to clipboard with dummy text')
+  .option('-c, --copy', 'Copy to clipboard with dummy text')
   .parse()
 
 class Cli {
