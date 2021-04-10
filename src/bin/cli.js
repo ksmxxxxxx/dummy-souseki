@@ -31,7 +31,7 @@ class Cli {
     } else {
       paragraph = this.dummySouseki.singlePragraph()
     }
-    console.log(paragraph)
+    process.stdout.write(paragraph)
     if (this.isCopy) {
       this.clipboard.copy(paragraph)
     }
