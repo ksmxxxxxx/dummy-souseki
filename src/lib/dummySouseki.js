@@ -10,7 +10,7 @@ class DummySouseki {
 
   singlePragraph () {
     const randomNum = this.chooseRandomParagraph(dataLength)
-    return `${DATA[randomNum]}\n`
+    return `${DATA[randomNum]}`
   }
 
   multipleParagraphs (num) {
