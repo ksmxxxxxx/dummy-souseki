@@ -1,9 +1,12 @@
 {
     "env": {
         "node": true,
-        "es2020": true
+        "es2021": true
     },
-    "extends": "standard",
+    "extends": [
+      "standard",
+      "plugin:jest/recommended"
+    ],
     "parserOptions": {
         "ecmaVersion": 11,
         "sourceType": "module"
