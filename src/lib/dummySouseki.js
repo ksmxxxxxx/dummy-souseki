@@ -1,21 +1,19 @@
+import Random from './random.js'
 import { KOKORO } from '../data/kokoro.js'
 
 const DATA = KOKORO
-const dataLength = DATA.length
 
 class DummySouseki {
-  chooseRandomParagraph (max) {
-    return Math.floor(Math.random() * Math.floor(max))
+  constructor () {
+    this.random = new Random()
   }
 
-  singlePragraph () {
-    const randomNum = this.chooseRandomParagraph(dataLength)
+  singlePragraph (randomNum) {
     return `${DATA[randomNum]}`
   }
 
-  multipleParagraphs (num) {
-    const randomNum = this.chooseRandomParagraph(dataLength)
-    return DATA.slice(randomNum, randomNum + num).join('\n')
+  multipleParagraphs (randomNum, paragraphNum) {
+    return DATA.slice(randomNum, randomNum + paragraphNum).join('\n')
   }
 }
 
