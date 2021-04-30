@@ -1,0 +1,19 @@
+version: 2.1
+orbs:
+  node: circleci/node@4.3.0
+jobs:
+  test:
+    docker:
+      - image: circleci/node:12
+    steps:
+      - checkout
+      - run:
+          name: install depedencies
+          command: yarn install
+      - run:
+          name: test souseki
+          command: yarn run test
+workflows:
+  node-tests:
+    jobs:
+      - test
