@@ -13,7 +13,25 @@ jobs:
       - run:
           name: test souseki
           command: yarn run test
+  npm_publish:
+    docker:
+      - image: circleci/node:12
+    steps:
+      - checkout
+      - run:
+          name: publish to npm
+          command: |
+            npm set //registry.npmjs.org/:_authToken=$NPM_TOKEN
+            npm publish
 workflows:
   node-tests:
     jobs:
       - test
+
+  publish:
+    jobs:
+      - test
+      - npm_publish:
+          filters:
+            tags:
+              only: /v[0-9]+(\.[0-9]+)*/
