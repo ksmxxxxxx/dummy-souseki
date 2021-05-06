@@ -1,6 +1,6 @@
 {
   "name": "dummy-souseki",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Displays the dummy text with Souseki Natsume 'kokoro'.",
   "main": "index.js",
   "type": "module",
