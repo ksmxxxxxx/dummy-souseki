@@ -8,7 +8,7 @@
     "dummy-souseki": "src/bin/cli.js"
   },
   "scripts": {
-    "cli-test": "node src/bin/cli.js",
+    "lint": "eslint src/**/*.js",
     "test": "jest"
   },
   "repository": {
