@@ -1,5 +1,8 @@
 # dummy-souseki
 
+![NPM](https://img.shields.io/npm/l/dummy-souseki)
+[![GitHub license](https://img.shields.io/github/license/ksmxxxxxx/dummy-souseki)](https://github.com/ksmxxxxxx/dummy-souseki)
+
 ## これはなに？
 
 コマンドを実行すると日本語のダミーテキストが表示されるCLIツールです。  
